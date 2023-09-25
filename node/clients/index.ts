@@ -1,7 +1,7 @@
 import { IOClients } from '@vtex/api'
 
 import Status from './status'
-import getContactDetails from './getContact'
+import Contact from './contact'
 
 // Extend the default IOClients implementation with our own custom clients.
 export class Clients extends IOClients {
@@ -9,7 +9,7 @@ export class Clients extends IOClients {
     return this.getOrSet('status', Status)
   }
 
-  public get getContactDetails() {
-    return this.getOrSet('getContact', getContactDetails)
+  public get contact() {
+    return this.getOrSet('contact', Contact)
   }
 }

@@ -2,9 +2,9 @@ export async function getContact(ctx: Context, next: () => Promise<any>) {
     const {
         vtex: {
         },
-        clients: { getContactDetails } 
+        clients: { contact } 
     } = ctx
-    const data = await getContactDetails.getContactDetails()
+    const data = await contact.getContactDetails()
     ctx.body=data
     await next()
 }
