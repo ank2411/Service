@@ -17,8 +17,8 @@ export default class Contact extends ExternalClient {
     return {
       headers: {
         'Content-type': 'application/json',
-        'X-VTEX-API-AppKey': "vtexappkey-trika-ISQYOP",
-        'X-VTEX-API-AppToken': 'ZBZHATNKSPOQOJULDZRSDBUTPXWPGQYSOHZNXYZBVFXBRCUEEMSFNIIHUERMACTTYNVBJFWUWYANMAHDBJONTSABMCGAWRQMNWBAXKJCYHYAOYTCBYCVJTOZGDGWKFGH'
+        'X-VTEX-API-AppKey': this.setting?.apiKey,
+        'X-VTEX-API-AppToken': this.setting?.appToken
       },
     }
   }
